@@ -12,6 +12,7 @@ brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask kaleidoscope
+brew install --cask tower
 brew install --cask visual-studio-code
 
 # Developer fonts
