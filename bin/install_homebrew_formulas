@@ -3,7 +3,6 @@
 # Installs Homebrew software.
 
 brew install zsh
-brew install romkatv/powerlevel10k/powerlevel10k
 brew install exiftool
 brew install graphicsmagick
 brew install httpie

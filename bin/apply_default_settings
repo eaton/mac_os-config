@@ -1,10 +1,10 @@
 #! /usr/bin/env bash
 
-
-# Set up Oh My ZSH unattended
+# Set up Oh My ZSH unattended, add powerlevel10k theme
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# Applies system and application defaults.
+# Apply system and application defaults.
 
 printf "%s\n" "System - Expand save panel by default."
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
