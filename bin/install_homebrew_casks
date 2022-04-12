@@ -4,20 +4,37 @@
 
 
 # General utilities
-brew install --cask alfred
-brew install --cask audio-hijack
-brew install --cask bbedit
+brew install --cask dropbox
+brew install --cask glance
 brew install --cask balenaetcher
 brew install --cask carbon-copy-cloner
+brew install --cask hazel
+
+
 brew install --cask discord
-brew install --cask dropbox
 brew install --cask firefox
-brew install --cask glance
 brew install --cask google-chrome
-brew install --cask kaleidoscope
+
+brew install --cask bbedit
+brew install --cask nova
 brew install --cask tower
+brew install --cask kaleidoscope
 brew install --cask visual-studio-code
+
+# Rogue Amoeba audio apps
+brew install --cask audio-hijack
+brew install --cask soundsource
+brew install --cask farrago
+brew install --cask loopback
 
 # Developer fonts
 brew install --cask font-ioskeva-nerd-font
 brew install --cask font-jetbrainsmono-nerd-font
+
+
+# Canon EOS Utilities
+
+
+
+# Sometimes Tools
+# brew install --cask alfred

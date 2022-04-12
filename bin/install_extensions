@@ -1,6 +1,5 @@
 #! /usr/bin/env bash
 
 # Installs application extensions.
+# We're also going to abuse this to customize app-specific settings.
 
-# install_git_app "$VIM_BUNDLER_EXTENSION_URL" "$VIM_BUNDLER_EXTENSION_PATH"
-# install_file "$VIM_PATHOGEN_EXTENSION_URL" "$VIM_PATHOGEN_EXTENSION_PATH"

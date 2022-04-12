@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 # Installs applications.
-
+# https://github.com/bkuhlmann/mac_os/blob/efa421db4edd5acb76f7f6311e6efe1631c9f0e2/lib/installers.sh
 
 # Elgato Control Center (Key Lights)
 install_zip_app "https://edge.elgato.com/egc/macos/eccm/1.2/ControlCenterMac-1.2.0.10411.app.zip" "Elgato Control Center.app"
@@ -18,22 +18,32 @@ install_dmg_app "https://cdn-fastly.obsproject.com/downloads/obs-mac-27.2.4.dmg"
 # Cura 3D
 install_dmg_app "https://objects.githubusercontent.com/github-production-release-asset-2e65be/20884782/f3c0933f-d78f-4dc4-9ba6-1a7da196281f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T004115Z&X-Amz-Expires=300&X-Amz-Signature=8e3cfd1306147f17b4294a20dc04991f340940e8efd50276d7e0d3bf392edae3&X-Amz-SignedHeaders=host&actor_id=46423&key_id=0&repo_id=20884782&response-content-disposition=attachment%3B%20filename%3DUltimaker_Cura-4.13.1-Darwin.dmg&response-content-type=application%2Foctet-stream", "Ultimaker_Cura-4.13.1-Darwin", "Ultimaker Cura.app"
 
+# OpenSCAD Dev Snapshot
+install_dmg_app "https://files.openscad.org/snapshots/OpenSCAD-2022.04.11.dmg", "OpenSCAD", "OpenSCAD.app"
+
+# Zoom
+install_bare_pkg "https://cdn.zoom.us/prod/5.10.1.5839/Zoom.pkg", "zoom.us.app"
+
+# SF Symbols
+install_dmg_pkg "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-3.2.dmg", "SFSymbols", "SF Symbols.pkg"
+
+# Discord
+install_dmg_app "https://dl.discordapp.net/apps/osx/0.0.266/Discord.dmg", "Discord", "Discord.app"
+
+# Canon EOS Utilities
+install_bare_pkg "https://downloads.canon.com/webcam/EOSWebcamUtility-MAC1.0.pkg.zip", "EOSWebcamUtility-MAC1.0.pkg"
+
+# Canon EOS installer is kinda of crap and uses custom code rather than a standard pkg.
+# install_dmg_app "https://gdlp01.c-wss.com/gds/8/0200006538/01/EU-Installset-M3.15.0.11.dmg.zip"
+
+
 
 # Miro
-# Discord
-# OpenSCAD
 # Ortelus 2
 # Private Internet Access
 # Screaming Frog SEO Spider
 # ScreenFlow
 # Steam
-# SoundSource
-# Audio Hijack
-# Zoom
-
-
-
-
 
 # install_homebrew()
 # install_node()
