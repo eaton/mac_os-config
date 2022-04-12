@@ -10,7 +10,6 @@ brew install --cask balenaetcher
 brew install --cask carbon-copy-cloner
 brew install --cask hazel
 
-
 brew install --cask discord
 brew install --cask firefox
 brew install --cask google-chrome
@@ -26,14 +25,12 @@ brew install --cask audio-hijack
 brew install --cask soundsource
 brew install --cask farrago
 brew install --cask loopback
+brew install --cask obs
 
 # Developer fonts
+brew tap homebrew/cask-fonts
 brew install --cask font-ioskeva-nerd-font
 brew install --cask font-jetbrainsmono-nerd-font
-
-
-# Canon EOS Utilities
-
 
 
 # Sometimes Tools
