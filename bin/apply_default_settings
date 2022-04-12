@@ -1,5 +1,9 @@
 #! /usr/bin/env bash
 
+
+# Set up Oh My ZSH unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 # Applies system and application defaults.
 
 printf "%s\n" "System - Expand save panel by default."
@@ -10,7 +14,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 printf "%s\n" "System - Automatically restart if system freezes."
 systemsetup -setrestartfreeze on
-
 
 printf "%s\n" "Keyboard - Automatically illuminate built-in MacBook keyboard in low light."
 defaults write com.apple.BezelServices kDim -bool true
@@ -35,10 +38,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-printf "%s\n" "Trackpad - Use CONTROL (^) with scroll to zoom."
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-
 printf "%s\n" "Trackpad - Follow keyboard focus while zoomed in."
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
@@ -47,9 +46,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 
 printf "%s\n" "Dock - Automatically hide and show."
 defaults write com.apple.dock autohide -bool true
-
-printf "%s\n" "Dock - Remove the auto-hiding delay."
-defaults write com.apple.Dock autohide-delay -float 0
 
 printf "%s\n" "Dock - Don’t show Dashboard as a Space."
 defaults write com.apple.dock "dashboard-in-overlay" -bool true
@@ -65,9 +61,6 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 printf "%s\n" "Finder - Disable the warning before emptying the Trash."
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
-
-printf "%s\n" "Finder - Allow text selection in Quick Look."
-defaults write com.apple.finder QLEnableTextSelection -bool true
 
 printf "%s\n" "Safari - Use Contains instead of Starts With in search banners."
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
@@ -88,24 +81,6 @@ defaults write com.apple.Safari UniversalSearchEnabled -bool false
 
 printf "%s\n" "Chrome - Prevent native print dialog, use system dialog instead."
 defaults write com.google.Chrome DisablePrintPreview -boolean true
-
-printf "%s\n" "Mail - Copy email addresses as 'foo@example.com' instead of 'Foo Bar <foo@example.com>'."
-defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
-
-printf "%s\n" "Mail - Disable send animation."
-defaults write com.apple.mail DisableSendAnimations -bool true
-
-printf "%s\n" "Mail - Disable reply animation."
-defaults write com.apple.mail DisableReplyAnimations -bool true
-
-printf "%s\n" "Mail - Enable COMMAND+ENTER to send mail."
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" -string "@\\U21a9"
-
-printf "%s\n" "Address Book - Enable debug menu."
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
-
-printf "%s\n" "iCal - Enable debug menu."
-defaults write com.apple.iCal IncludeDebugMenu -bool true
 
 printf "%s\n" "TextEdit - Use plain text mode for new documents."
 defaults write com.apple.TextEdit RichText -int 0
@@ -129,6 +104,3 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 printf "%s\n" "App Store - Enable the WebKit Developer Tools in the Mac App Store."
 defaults write com.apple.appstore WebKitDeveloperExtras -bool true
-
-printf "%s\n" "App Store - Enable Debug Menu in the Mac App Store."
-defaults write com.apple.appstore ShowDebugMenu -bool true

@@ -1,18 +1,7 @@
 #! /usr/bin/env bash
 
-# Configures shell goodies and installs Dotfiles.
-
-if [[ -z $(cat /etc/shells | grep "$(get_homebrew_bin_root)/zsh") ]]; then
-  sudo bash -c "printf '$(get_homebrew_bin_root)/zsh\n' >> /etc/shells"
-  chsh -s "$(get_homebrew_bin_root)/zsh"
-
-  # First make sure we've got Oh My Zsh installed.
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-  rm ~/.zshrc
-  install_git_project "https://github.com/eaton/dotfiles.git" $REPO_DOTFILES "$HOME/dotfiles" "bin/run i"
-  source "$HOME/.zshrc"
-else
-  printf "%s\n" "Dotfiles are installed."
-fi
+# Configures  Dotfiles.
+rm "$HOME/.zshrc"
+rm "$HOME/.p10k.zsh"
+install_git_project "https://github.com/eaton/dotfiles.git" $REPO_DOTFILES "$HOME/dotfiles" "bin/run i"
+source "$HOME/.zshrc"
