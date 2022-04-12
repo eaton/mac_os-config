@@ -12,7 +12,7 @@ IFS=$'\n\t'
 export HOMEBREW_CURL_RETRIES=3
 
 # Repositories
-export REPO_DOTFILES=46.2.1
+export REPO_DOTFILES="https://github.com/eaton/dotfiles"
 
 # Applications
 
@@ -25,8 +25,4 @@ else
   export DOCKER_APP_URL="https://desktop.docker.com/mac/stable/amd64/Docker.dmg"
 fi
 
-
-# Application Extensions
-export ARBITRARY_DIR="$HOME/"
-export ARBITRARY_URL="https://github.com/eaton/dotfiles"
 

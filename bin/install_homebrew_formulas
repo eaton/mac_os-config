@@ -5,6 +5,7 @@
 brew install exiftool
 brew install graphicsmagick
 brew install httpie
+brew install curl
 brew install mas
 brew install node
 brew install openssl

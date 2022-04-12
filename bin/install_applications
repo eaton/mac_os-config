@@ -2,5 +2,92 @@
 
 # Installs applications.
 
-# install_bare_pkg "$ELM_APP_URL" "$ELM_APP_NAME"
-# install_dmg_app "$DOCKER_APP_URL" "$DOCKER_VOLUME_NAME" "$DOCKER_APP_NAME"
+
+# Elgato Control Center (Key Lights)
+install_zip_app "https://edge.elgato.com/egc/macos/eccm/1.2/ControlCenterMac-1.2.0.10411.app.zip" "Elgato Control Center.app"
+
+# Elgato StreamDeck
+install_bare_pkg "https://edge.elgato.com/egc/macos/sd/Stream_Deck_5.2.1.15025.pkg" "Stream Deck.app"
+
+# ID3 Editor
+install_dmg_app "http://www.pa-software.com/release/download2.php?name=DLID&value=79a10b126a68ec9af7b771b119b984c2", "ID3 Editor", "ID3 Editor.app"
+
+# OBS
+install_dmg_app "https://cdn-fastly.obsproject.com/downloads/obs-mac-27.2.4.dmg", "OBS-Studio 27.2.4", "OBS.app"
+
+# Cura 3D
+install_dmg_app "https://objects.githubusercontent.com/github-production-release-asset-2e65be/20884782/f3c0933f-d78f-4dc4-9ba6-1a7da196281f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220412%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220412T004115Z&X-Amz-Expires=300&X-Amz-Signature=8e3cfd1306147f17b4294a20dc04991f340940e8efd50276d7e0d3bf392edae3&X-Amz-SignedHeaders=host&actor_id=46423&key_id=0&repo_id=20884782&response-content-disposition=attachment%3B%20filename%3DUltimaker_Cura-4.13.1-Darwin.dmg&response-content-type=application%2Foctet-stream", "Ultimaker_Cura-4.13.1-Darwin", "Ultimaker Cura.app"
+
+
+# Miro
+# Discord
+# OpenSCAD
+# Ortelus 2
+# Private Internet Access
+# Screaming Frog SEO Spider
+# ScreenFlow
+# Steam
+# SoundSource
+# Audio Hijack
+# Zoom
+
+
+
+
+
+# install_homebrew()
+# install_node()
+# install_rust()
+# install_ruby()
+
+# download_file
+# Downloads remote file to local disk.
+# Parameters: $1 (required) - URL, $2 (required) - File name, $3 (optional) - HTTP header.
+
+# install_file
+# Installs a single file.
+# Parameters: $1 (required) - URL, $2 (required) - Install path.
+
+
+
+# install_app
+# Installs an application.
+# Parameters: $1 (required) - Application source path, $2 (required) - Application name.
+
+
+# install_dmg_app
+# Installs an application via a DMG file.
+# Parameters: $1 (required) - URL, $2 (required) - Mount path, $3 (required) - Application name.
+
+# install_dmg_pkg
+# Installs a package via a DMG file.
+# Parameters: $1 (required) - URL, $2 (required) - Mount path, $3 (required) - Application name.
+
+
+# install_git_app
+# Installs application code from a Git repository.
+# Parameters: $1 (required) - Repository URL, $2 (required) - Install path, $3 (optional) - Git clone options.
+
+# install_git_project
+# Installs settings from a Git repository.
+# Parameters: $1 (required) - Repository URL, $2 (required) - Repository version, $3 (required) - Project directory, $4 (required) - Script to run (including any arguments).
+
+
+
+
+# install_tar_app
+# Installs an application via a tar file.
+# Parameters: $1 (required) - URL, $2 (required) - Application name, $3 (required) - Decompress options.
+
+# install_zip_app
+# Installs an application via a zip file.
+# Parameters: $1 (required) - URL, $2 (required) - Application name.
+
+# install_zip_pkg
+# Installs a package via a zip file.
+# Parameters: $1 (required) - URL, $2 (required) - Application name.
+
+# install_bare_pkg
+# Installs a package via a download url.
+# Parameters: $1 (required) - URL, $2 (required) - Application name.
+

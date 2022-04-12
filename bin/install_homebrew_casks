@@ -2,6 +2,8 @@
 
 # Installs Homebrew Casks.
 
+
+# General utilities
 brew install --cask alfred
 brew install --cask audio-hijack
 brew install --cask bbedit
@@ -10,6 +12,7 @@ brew install --cask carbon-copy-cloner
 brew install --cask discord
 brew install --cask dropbox
 brew install --cask firefox
+brew install --cask glance
 brew install --cask google-chrome
 brew install --cask kaleidoscope
 brew install --cask tower

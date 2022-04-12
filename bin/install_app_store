@@ -1,27 +1,112 @@
 #! /usr/bin/env bash
 
 # Installs App Store software.
+# Long term, we'll want to prune this for "work" versus "dev" vs "light" configurations.
 
-# 1Password
-mas install 443987910
-
-# Acorn
-mas install 1547371478
-
+### System Utilities
+# 1Password 7
+mas install 1333542190
+# Peek
+mas install 1554235898
+# PCalc
+mas install 403504866
+# AutoMounter
+mas install 1160435653
+# Backdrop
+mas install 411461952
+# Actions
+mas install 1586435171
+# Userscripts
+mas install 1463298887
+# Magnet
+mas install 441258766
+# Deliveries
+mas install 290986013
+# The Unarchiver
+mas install 425424353
 # DaisyDisk
 mas install 411643860
+# Spillo
+mas install 873245660
 
+
+### Development Tools
+# Xcode
+mas install 497799835
+# TestFlight
+mas install 899247664
+# Playgrounds
+mas install 1496833156
+# CodeRunner
+mas install 955297617
+# BetterJSON
+mas install 1511935951
+# Easy CSV Editor
+mas install 1171346381
+# PLIST Editor
+mas install 1157491961
+# JSON Editor
+mas install 567740330
+# RegExRX
+mas install 498370702
+
+
+### iWork and Friends
 # Keynote
 mas install 409183694
-
-# Kindle
-mas install 405399194
-
+# Pages
+mas install 409201541
 # Numbers
 mas install 409203825
 
-# Pages
-mas install 409201541
 
+### Work Tools
+# Things
+mas install 904280696
 # Slack
 mas install 803453959
+# iA Writer
+mas install 775737590
+# Acorn
+mas install 1547371478
+# OmniOutliner
+mas install 1142578772
+# OmniGraffle
+mas install 1142578753
+# MindNode
+mas install 1289197285
+# Airmail
+mas install 918858936
+# Pixave
+mas install 924891282
+
+
+### Microsoft Office
+# Microsoft Word
+mas install 462054704
+# Microsoft Excel
+mas install 462058435
+# Microsoft PowerPoint
+mas install 462062816
+
+
+### Reader Apps
+# Kindle
+mas install 405399194
+# Simple Comic
+mas install 1497435571
+# Reeder
+mas install 1529448980
+
+
+### Misc Creative Apps
+# Affinity Photo
+mas install 824183456
+# Affinity Designer
+mas install 824171161
+# Affinity Publisher
+mas install 881418622
+# Shapr3D
+mas install 1091675654
+# Pixelmator Pro
+mas install 1289583905
