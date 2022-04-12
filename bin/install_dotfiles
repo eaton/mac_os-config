@@ -6,5 +6,5 @@ rm "$HOME/.p10k.zsh"
 rm "$HOME/.gitconfig"
 rm "$HOME/.gitinclude"
 
-install_git_project "https://github.com/eaton/dotfiles.git" $REPO_DOTFILES "$HOME/dotfiles" "bin/run i"
+install_git_project "https://github.com/eaton/dotfiles.git" $REPO_DOTFILES "$HOME/dotfiles" "bin/run l"
 source "$HOME/.zshrc"
