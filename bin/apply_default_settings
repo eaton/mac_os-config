@@ -76,6 +76,17 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 printf "%s\n" "Safari - Add a context menu item for showing the Web Inspector in web views."
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+printf "%s\n" "Safari - Hide new feature nagging."
+defaults write com.apple.Safari DidReportHistorySettings -bool true
+defaults write com.apple.Safari DidShowWhatsNewInSafari -bool true
+defaults write com.apple.Safari DidShowWhatsNewInSafari15 -bool true
+
+printf "%s\n" "Safari - Disable password and other autofills; 1Password will handle it."
+defaults write com.apple.Safari AutoFillCreditCardData -bool false
+defaults write com.apple.Safari AutoFillFromAddressBook -bool false
+defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
+defaults write com.apple.Safari AutoFillPasswords -bool false
+
 printf "%s\n" "Safari - Disable sending search queries to Apple."
 defaults write com.apple.Safari UniversalSearchEnabled -bool false
 
