@@ -2,7 +2,6 @@
 
 # Installs Homebrew Casks.
 
-
 # General utilities
 brew install --cask dropbox
 brew install --cask glance
@@ -29,9 +28,7 @@ brew install --cask obs
 
 # Developer fonts
 brew tap homebrew/cask-fonts
-brew install --cask font-ioskeva-nerd-font
-brew install --cask font-jetbrainsmono-nerd-font
-
+brew install --cask font-iosevka-nerd-font
 
 # Sometimes Tools
-# brew install --cask alfred
+brew install --cask alfred
