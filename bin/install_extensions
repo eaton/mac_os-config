@@ -3,4 +3,3 @@
 # Installs application extensions.
 # We're also going to abuse this to customize app-specific settings.
 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

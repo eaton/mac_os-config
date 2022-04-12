@@ -12,7 +12,7 @@ IFS=$'\n\t'
 export HOMEBREW_CURL_RETRIES=3
 
 # Repositories
-export REPO_DOTFILES="https://github.com/eaton/dotfiles"
+export REPO_DOTFILES="main"
 
 # Applications
 
