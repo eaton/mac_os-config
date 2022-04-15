@@ -30,7 +30,7 @@ install_dmg_pkg "https://devimages-cdn.apple.com/design/resources/download/SF-Sy
 # Discord
 install_dmg_app "https://dl.discordapp.net/apps/osx/0.0.266/Discord.dmg", "Discord", "Discord.app"
 
-# Canon EOS Utilities
+# Canon Webcam Utility
 install_bare_pkg "https://downloads.canon.com/webcam/EOSWebcamUtility-MAC1.0.pkg.zip", "EOSWebcamUtility-MAC1.0.pkg"
 
 # Canon EOS installer is kinda of crap and uses custom code rather than a standard pkg.

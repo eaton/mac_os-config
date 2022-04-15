@@ -12,20 +12,8 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 printf "%s\n" "System - Avoid creating .DS_Store files on network volumes."
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-printf "%s\n" "System - Automatically restart if system freezes."
-systemsetup -setrestartfreeze on
-
-printf "%s\n" "Keyboard - Automatically illuminate built-in MacBook keyboard in low light."
-defaults write com.apple.BezelServices kDim -bool true
-
-printf "%s\n" "Keyboard - Turn off keyboard illumination when computer is not used for 5 minutes."
-defaults write com.apple.BezelServices kDimTime -int 300
-
 printf "%s\n" "Keyboard - Enable keyboard access for all controls."
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-printf "%s\n" "Keyboard - Disable press-and-hold for keys in favor of key repeat."
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 printf "%s\n" "Trackpad - Map bottom right corner to right-click."
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
@@ -112,6 +100,3 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 
 printf "%s\n" "Printer - Automatically quit printer app once the print jobs complete."
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
-
-printf "%s\n" "App Store - Enable the WebKit Developer Tools in the Mac App Store."
-defaults write com.apple.appstore WebKitDeveloperExtras -bool true
